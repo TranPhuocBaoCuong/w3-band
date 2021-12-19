@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>W3 Band</title>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/responsive.css" />
+</head>
+
+<body>
+	<div class="root">
+		<header class="header">
+			<nav class="navbar">
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a href="#" class="navbar__link">home</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#band" class="navbar__link">band</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#tour" class="navbar__link">tour</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#contact" class="navbar__link">contact</a>
+					</li>
+					<li class="navbar__item">
+						<a href="#" class="navbar__link">
+							more
+							<i class="fas fa-caret-down navbar__icon-down"></i>
+						</a>
+						<ul class="subnav">
+							<li class="subnav__item">
+								<a href="#" class="subnav__link">Merchandise</a>
+							</li>
+							<li class="subnav__item">
+								<a href="#" class="subnav__link">Extras</a>
+							</li>
+							<li class="subnav__item">
+								<a href="#" class="subnav__link">Media</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="search-btn hide-on-mobile">
+				<i class="fas fa-search search-icon"></i>
+			</div>
+
+			<div class="toggle-bars">
+				<i class="fas fa-bars toggle-bars-icon"></i>
+			</div>
+		</header>
+
+		<div class="slider">
+			<div class="slider-item">
+				<div
+					class="slider-img"
+					style="background-image: url('./assets/img/slide-img/chicago.jpg')"
+				>
+					<div class="slider-text hide-on-mobile">
+						<h3 class="slider-title">
+							Chicago
+						</h3>
+						<p class="slider-content">
+							Thank you, Chicago - A night we won't forget.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider-item">
+				<div
+					class="slider-img"
+					style="background-image: url('./assets/img/slide-img/la.jpg')"
+				>
+					<div class="slider-text hide-on-mobile">
+						<h3 class="slider-title">
+							Los Angeles
+						</h3>
+						<p class="slider-content">
+							We had the best time playing at Venice Beach!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="slider-item">
+				<div
+					class="slider-img"
+					style="background-image: url('./assets/img/slide-img/ny.jpg')"
+				>
+					<div class="slider-text hide-on-mobile">
+						<h3 class="slider-title">
+							New York
+						</h3>
+						<p class="slider-content">
+							The atmosphere in New York is lorem ipsum.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div id="band" class="content__session">
+				<div class="content__header">
+					<h2 class="content__heading">
+						THE BAND
+					</h2>
+					<p class="content__slogan">
+						We love music
+					</p>
+				</div>
+				<div class="content__about">
+					<p class="content__about-para">
+						We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<div class="content__member-list row">
+						<div class="content__member-item col col-4 s-col-12">
+							<span class="content__member-name">Name</span>
+							<img
+								src="./assets/img/member-img/bandmember.jpg" 
+								alt="member-img"
+								class="content__member-img"
+							>
+						</div>
+						<div class="content__member-item col col-4 s-col-12">
+							<span class="content__member-name">Name</span>
+							<img
+								src="./assets/img/member-img/bandmember.jpg"
+								alt="member-img"
+								class="content__member-img"
+							>
+						</div>
+						<div class="content__member-item col col-4 s-col-12">
+							<span class="content__member-name">Name</span>
+							<img
+								src="./assets/img/member-img/bandmember.jpg"
+								alt="member-img"
+								class="content__member-img"
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tour" class="content__black-theme">
+				<div class="content__session">
+					<div class="content__header">
+						<h2 class="content__heading">
+							TOUR DATES
+						</h2>
+						<p class="content__slogan">
+							Remember to book your tickets!
+						</p>
+					</div>
+					<br />
+					<div class="content__tour">
+						<ul class="content__tour-ticket-list">
+							<li class="content__tour-ticket-item">
+								September
+								<span class="sold-out">Sold out</span>
+							</li>
+							<li class="content__tour-ticket-item">
+								October 
+								<span class="sold-out">Sold out</span>
+							</li>
+							<li class="content__tour-ticket-item">
+								November
+								<span class="ticket-number">3</span>
+							</li>
+						</ul>
+
+						<div class="content__tour-places row">
+							<div class="content__tour-place-item col col-4 s-col-12">
+								<img
+									src="./assets/img/places-img/newyork.jpg"
+									alt="New York"
+									class="content__tour-img"
+								>
+								<div class="content__tour-info">
+									<span class="place-name">New York</span>
+									<span class="place-date">Fri 27 Nov 2016</span>
+									<span class="place-desc">
+										Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+									</span>
+									<button class="btn js-buy-btn">Buy Tickets</button>
+								</div>
+							</div>
+							<div class="content__tour-place-item col col-4 s-col-12">
+								<img
+									src="./assets/img/places-img/paris.jpg"
+									alt="Paris"
+									class="content__tour-img"
+								>
+								<div class="content__tour-info">
+									<span class="place-name">Paris</span>
+									<span class="place-date">Sat 28 Nov 2016</span>
+									<span class="place-desc">
+										Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+									</span>
+									<button class="btn js-buy-btn">Buy Tickets</button>
+								</div>
+							</div>
+							<div class="content__tour-place-item col col-4 s-col-12">
+								<img
+									src="./assets/img/places-img/sanfran.jpg"
+									alt="San Francisco"
+									class="content__tour-img"
+								>
+								<div class="content__tour-info">
+									<span class="place-name">San Francisco</span>
+									<span class="place-date">Sun 29 Nov 2016</span>
+									<span class="place-desc">
+										Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+									</span>
+									<button class="btn js-buy-btn">Buy Tickets</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contact" class="content__session">
+				<div class="content__header">
+					<h2 class="content__heading">
+						CONTACT
+					</h2>
+					<p class="content__slogan">
+						Fan? Drop a note!
+					</p>
+				</div>
+				<div class="content__session-contact row">
+					<ul class="content__contact-info col col-6 s-col-12">
+						<li class="content__contact-info-item">
+							<i class="fas fa-map-marker-alt"></i>
+							Chicago, US
+						</li>
+						<li class="content__contact-info-item mt-16">
+							<i class="fas fa-phone-alt"></i>
+							Phone: +00 151515
+						</li>
+						<li class="content__contact-info-item mt-16">
+							<i class="fas fa-envelope"></i>
+							Email: mail@mail.com
+						</li>
+					</ul>
+					<form class="content__contact-form col col-6 s-col-12">
+						<div class="row">
+							<div class="col col-6 s-col-12 s-mt-16 s-mb-8">
+								<input type="text" placeholder="Name" required>
+							</div>
+							<div class="col col-6 s-col-12">
+								<input type="text" placeholder="Email" required>
+							</div>
+						</div>
+						<div class="mt-8">
+							<input type="text" placeholder="Message" required>
+						</div>
+
+						<button type="submit" class="btn btn-send mt-16">SEND</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="map">
+			<img src="./assets/img/map-img/map.jpg" alt="map" class="map-img">
+		</div>
+
+		<footer class="footer">
+			<ul class="footer__social-list">
+				<li class="footer__social-item">
+					<a href="" class="footer__social-link">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="" class="footer__social-link">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="" class="footer__social-link">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="" class="footer__social-link">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a href="" class="footer__social-link">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</li>
+			</ul>
+			<p class="footer_para mt-16">
+				Powered by 
+				<a href="">w3.css</a>
+			</p>
+		</footer>
+	</div>
+
+	<div class="modal">
+		<div class="modal__body js-modal-body">
+			<div class="modal-close js-modal-close">
+				<i class="fas fa-times"></i>
+			</div>
+			<header class="modal__body-header">
+				<i class="fas fa-suitcase"></i>
+				<span>Tickets</span>
+			</header>
+			<div class="modal__body-content">
+				<label for="">
+					<i class="fas fa-shopping-cart"></i>
+					Tickets, $15 per person
+				</label>
+				<input type="text" placeholder="How many?">
+				<label for="">
+					<i class="fas fa-shopping-cart"></i>
+					Send To
+				</label>
+				<input type="email" placeholder="Enter email">
+
+				<button class="modal__body-btn">
+					PAY
+					<i class="fas fa-check"></i>
+				</button>
+			</div>
+			<footer class="modal__footer">
+				<button class="modal__footer-btn-close js-modal-footer-btn-close">
+					Close
+					<i class="fas fa-times"></i>
+				</button>
+				<span class="modal__footer-help">
+					Need <a href="">help?</a>
+				</span>
+			</footer>
+		</div>
+	</div>
+
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-1.11.0.min.js"
+	></script>
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+	></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+	></script>
+	<script type="text/javascript"
+		src="./assets/script/main.js"
+	></script>
+</body>
+
+</html>

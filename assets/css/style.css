@@ -1,0 +1,481 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+}
+
+.row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.col {
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.col-4 {
+	width: calc(100% / 3);
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mt-8 {
+	margin-top: 8px;
+}
+
+.mt-16 {
+	margin-top: 16px;
+}
+
+.root {
+	overflow: hidden;
+}
+
+.header {
+	height: 46px;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.navbar__item {
+	display: inline-block;
+	position: relative;
+}
+
+.navbar__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 46px;
+	display: block;
+	padding: 0 24px;
+}
+
+.navbar__item:hover .navbar__link {
+	background-color: #ccc;
+	color: #000;
+}
+
+.navbar__item:hover .subnav {
+	display: block;
+}
+
+.navbar__icon-down {
+	font-size: 1.5rem;
+}
+
+.subnav {
+	list-style: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 160px;
+	background-color: #fff;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+	display: none;
+}
+
+.subnav__link {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #333;
+	display: block;
+	padding: 8px 16px;
+}
+
+.subnav__link:hover {
+	background-color: #ccc;
+}
+
+.search-btn {
+	width: 62px;
+	display: flex;
+}
+
+.search-btn:hover {
+	background-color: #f44336;
+	cursor: pointer;
+}
+
+.search-icon {
+	font-size: 1.7rem;
+	color: #fff;
+	margin: auto;
+}
+
+.toggle-bars {
+	display: none;
+}
+
+.slider {
+	margin-top: 46px;
+}
+
+.slider-img {
+	padding-top: 50%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.slider-text {
+	color: #fff;
+	position: absolute;
+	bottom: 48px;
+	width: 100%;
+	text-align: center;
+}
+
+.slider-title {
+	font-size: 2.4rem;
+}
+
+.slider-content {
+	font-size: 1.5rem;
+	margin-top: 24px;
+}
+
+.content__session {
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+	padding: 64px 0;
+}
+
+.content__black-theme {
+	background-color: #000;
+}
+
+.content__black-theme .content__header {
+	color: #fff;
+}
+
+.content__header {
+	text-align: center;
+}
+
+.content__heading {
+	font-size: 3rem;
+	font-weight: 300;
+	letter-spacing: 4px;
+}
+
+.content__slogan {
+	font-size: 1.5rem;
+	font-style: italic;
+	opacity: 0.6;
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+
+.content__about-para {
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.content__member-list {
+	margin-top: 48px;
+}
+
+.content__member-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content__member-name {
+	font-size: 1.5rem;
+}
+
+.content__member-img {
+	width: 60%;
+	margin-top: 16px;
+	border-radius: 4px;
+}
+
+.content__tour-ticket-list {
+	background-color: #fff;
+	list-style: none;
+}
+
+.content__tour-ticket-item {
+	font-size: 1.5rem;
+	padding: 8px 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+.sold-out {
+	background-color: #f44336;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 4px 8px;
+	margin-left: 16px;
+}
+
+.ticket-number {
+	display: inline-flex;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #000;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	margin-top: -4px;
+}
+
+.content__tour-places {
+	margin-top: 32px;
+}
+
+.content__tour-info {
+	background-color: #fff;
+	font-size: 15px;
+	padding: 0 16px 15px;
+	overflow: hidden;
+}
+
+.content__tour-img {
+	width: 100%;
+	display: block;
+}
+
+.place-name {
+	font-weight: bold;
+}
+
+.place-date {
+	opacity: 0.6;
+}
+
+.place-name,
+.place-date,
+.place-desc {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.btn {
+	padding: 8px 16px;
+	background-color: #000;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #fff;
+	border: none;
+}
+
+.btn:hover {
+	color: #000;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.content__session-contact {
+	margin-top: 32px;
+}
+
+.content__contact-info {
+	list-style: none;
+}
+
+.content__contact-info-item {
+	font-size: 1.5rem;
+}
+
+.content__contact-info-item i {
+	width: 20px;
+}
+
+.content__contact-form input {
+	padding: 8px;
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.btn-send {
+	float: right;
+}
+
+.map-img {
+	width: 100%;
+}
+
+.footer {
+	padding: 64px 16px;
+	text-align: center;
+}
+
+.footer__social-list {
+	list-style: none;
+}
+
+.footer__social-item {
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.footer__social-item:hover {
+	opacity: 0.6;
+}
+
+.footer__social-link {
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.footer_para a:hover {
+	opacity: 0.6;
+}
+
+.footer_para {
+	font-size: 1.5rem;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .4);
+	display: none;
+}
+
+@keyframes modalFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.modal.open {
+	display: flex;
+}
+
+.modal__body {
+	margin: auto;
+	width: 900px;
+	max-width: calc(100% - 32px);
+	background-color: #fff;
+	position: relative;
+	animation: modalFadeIn ease .3s;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 16px;
+	cursor: pointer;
+}
+
+.modal__body-btn:hover,
+.modal-close:hover,
+.modal__footer-btn-close:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+.modal-close:hover i {
+	color: #333;
+}
+
+.modal-close i {
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.modal__body-header {
+	font-size: 3rem;
+	color: #fff;
+	background-color: #009688;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.modal__body-header i {
+	margin-right: 16px;
+}
+
+.modal__body-header span {
+	letter-spacing: 4px;
+}
+
+.modal__body-content {
+	font-size: 1.5rem;
+	padding: 0 16px;
+}
+
+.modal__body-content label {
+	display: block;
+	margin: 16px 0;
+}
+
+.modal__body-content input {
+	padding: 8px;
+	width: 100%;
+}
+
+.modal__body-btn {
+	width: 100%;
+	background-color: #009688;
+	color: #fff;
+	border: none;
+	margin-top: 16px;
+	padding: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.modal__footer {
+	font-size: 1.5rem;
+	padding: 32px 16px 16px;
+	display: flex;
+}
+
+.modal__footer-btn-close {
+	background-color: #f44336;
+	color: #fff;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.modal__footer-help {
+	margin-left: auto;
+}
